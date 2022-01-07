@@ -1,0 +1,36 @@
+div {
+  display: block;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.center-container {
+  display: flex;
+  position: relative;
+}
+
+.center-container .side-col {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 50px;
+  display: inline-block;
+  align-items: center;
+}
+
+.center-container .center-col.default-clock {
+  cursor: default;
+  font-size: 850%;
+  letter-spacing: -5px;
+  text-align: center;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
