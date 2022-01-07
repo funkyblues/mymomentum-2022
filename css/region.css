@@ -2,7 +2,33 @@ div {
   display: block;
 }
 
+body {
+  text-shadow: 0 1px 5px rgb(0 0 0 /10%);
+}
+
+.full.region {
+  height: 100%;
+  display: flex;
+}
+
+.top.region {
+  height: 50px;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.center-above.region {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .center {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +40,10 @@ div {
 .center-container {
   display: flex;
   position: relative;
+}
+
+.center-container.resize-wrapper {
+  transition: height var(--duration) ease;
 }
 
 .center-container .side-col {
