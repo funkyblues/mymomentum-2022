@@ -6,6 +6,10 @@ body {
   text-shadow: 0 1px 5px rgb(0 0 0 /10%);
 }
 
+.has-3-col {
+  display: flex;
+}
+
 .apps,
 .full {
   z-index: 3;
@@ -52,10 +56,6 @@ body {
   flex-basis: auto;
 }
 
-.center-container.resize-wrapper {
-  transition: height var(--duration) ease;
-}
-
 .center-container .side-col {
   flex-grow: 1;
   flex-shrink: 0;
@@ -73,6 +73,23 @@ body {
   padding: 0;
   margin: 0;
   color: #fff;
+}
+
+.greeting {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.has-3-col .side-col {
+  flex: 1 0 50px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.has-3-col .center-col {
+  color: white;
+  font-size: 3rem;
 }
 
 .bottom-row {
