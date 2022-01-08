@@ -2,18 +2,58 @@ div {
   display: block;
 }
 
+body {
+  text-shadow: 0 1px 5px rgb(0 0 0 /10%);
+}
+
+.has-3-col {
+  display: flex;
+}
+
+.apps,
+.full {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.full {
+  height: 100%;
+  display: flex;
+}
+
+.top-row {
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+
+.center-above,
+.center-below {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .center {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
-}
-
-.center-container {
-  display: flex;
-  position: relative;
 }
 
 .center-container .side-col {
@@ -33,4 +73,25 @@ div {
   padding: 0;
   margin: 0;
   color: #fff;
+}
+
+.greeting {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.has-3-col .side-col {
+  flex: 1 0 50px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.has-3-col .center-col {
+  color: white;
+  font-size: 3rem;
+}
+
+.bottom-row {
+  height: 60px;
 }
