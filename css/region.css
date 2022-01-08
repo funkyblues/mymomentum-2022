@@ -1,8 +1,15 @@
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
 div {
   display: block;
 }
 
 body {
+  margin: 0;
   text-shadow: 0 1px 5px rgb(0 0 0 /10%);
 }
 
@@ -10,9 +17,7 @@ body {
   display: flex;
 }
 
-.apps,
-.full {
-  z-index: 3;
+.apps {
   display: flex;
   flex-direction: column;
   transition: opacity 0.3s ease;
@@ -24,8 +29,12 @@ body {
 }
 
 .full {
-  height: 100%;
-  display: flex;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .top-row {
@@ -76,6 +85,7 @@ body {
 }
 
 .greeting {
+  font-size: 3rem;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -90,6 +100,49 @@ body {
 .has-3-col .center-col {
   color: white;
   font-size: 3rem;
+}
+
+.focus-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.prompt {
+  padding-bottom: 0.5em;
+  max-width: 100%;
+}
+
+.focus-question {
+  color: white;
+  font-size: 2.1875em;
+  font-weight: 400;
+  margin: 0;
+  line-height: normal;
+}
+
+.prompt .hidden-data {
+  display: block;
+  height: 0;
+  padding: 0;
+  visibility: hidden;
+  border: none;
+  border-bottom: none;
+}
+
+.focus-input {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-top: 4px;
+  display: block;
+  background: 0;
+  border: 0;
+  font-size: 2.25em;
+  display: block;
+  border-bottom: 2px solid #fff;
+  line-height: 1.2;
+  font-weight: 500;
+  outline: none;
 }
 
 .bottom-row {

@@ -8,43 +8,52 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="background">
-      <div class="background-item"></div>
-      <div class="background-overlay"></div>
-    </div>
-    <div class="apps">
-      <div class="full region"></div>
-      <div class="region top-bar"></div>
-      <div class="top-row">
-        <div class="region top-left"></div>
-        <div class="region top-center"></div>
-        <div class="region top-right"></div>
+    <div id="main-view" style="visibility: visible;">
+      <div class="background">
+        <div class="background-item"></div>
+        <div class="background-overlay"></div>
       </div>
-      <div class="region center-above"></div>
-
-      <div class="center region">
-        <div
-          class="center-container resize-wrapper"
-          style="--duration: 500ms; height: auto"
-        >
-          <div class="center-clock has-3-col">
-            <div class="side-col left"></div>
-            <div>
-              <div class="center-col default-clock">00:00</div>
+      <div class="apps">
+        <div class="full region"></div>
+        <div class="region top-bar"></div>
+        <div class="top-row">
+          <div class="region top-left"></div>
+          <div class="region top-center"></div>
+          <div class="region top-right"></div>
+        </div>
+        <div class="region center-above"></div>
+  
+        <div class="center region">
+          <div
+            class="center-container resize-wrapper"
+            style="--duration: 500ms; height: auto"
+          >
+            <div class="center-clock has-3-col">
+              <div class="side-col left"></div>
+              <div>
+                <div class="center-col default-clock">00:00</div>
+              </div>
+              <div class="side-col right"></div>
             </div>
-            <div class="side-col right"></div>
-          </div>
-          <div>
-            <div class="greeting has-3-col">
-              <div class="side-col"></div>
-              <div class="center-col">Good evening, Changuk</div>
-              <div class="side-col"></div>
+            <div>
+              <div class="greeting has-3-col">
+                <div class="side-col"></div>
+                <div class="center-col">Good evening, Changuk</div>
+                <div class="side-col"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="region center-below"></div>
-      <div class="bottom-row"></div>
+        <div class="region center-below">
+          <div class="focus-wrapper">
+            <div class="prompt">
+              <h3 class="focus-question">What is your main focus for today?</h3>
+              <div class="hidden-data"></div>
+              <input type="text" autocomplete="off" class="focus-input" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-row"></div>
     </div>
   </body>
 </html>
