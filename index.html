@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/greeting.js"></script>
+    <script src="./js/quotes.js"></script>
   </head>
   <body>
     <div id="main-view" style="visibility: visible;">
@@ -30,9 +32,9 @@
           >
             <div class="center-clock has-3-col">
               <div class="side-col left"></div>
-              <div>
-                <div class="center-col default-clock">00:00</div>
-              </div>
+              <span class="center-col default-clock">
+                <div class="time">00:00</div>
+              </span>
               <div class="side-col right"></div>
             </div>
             <div>
@@ -53,7 +55,11 @@
             </div>
           </div>
         </div>
-        <div class="bottom-row"></div>
+        <div class="bottom-row">
+          <div class="region bottom-left"></div>
+          <div class="region bottom">작은 도끼라도 찍고 찍으면 큰 참나무는 넘어진다.</div>
+          <div class="region bottom-right"></div>
+        </div>
     </div>
   </body>
 </html>
