@@ -95,18 +95,6 @@ h3 {
   display: inline-flex;
 }
 
-/* .center-container .center-col.default-clock {
-  cursor: default;
-  font-size: 850%;
-  letter-spacing: -5px;
-  text-align: center;
-  line-height: 1;
-  padding: 0;
-  margin: 0;
-  color: #fff;
-} */
-
-
 .time {
   cursor:default;
   font-size: 1050%;
@@ -185,13 +173,34 @@ h3 {
   justify-content: space-between;
 }
 
-.bottom-row .bottom-left {
+.bottom-row .bottom-left,
+.bottom-row .bottom-right {
   width: 241px;
 }
 
 .bottom-row .bottom {
-  text-align: center;
+  padding-bottom: 2px;
+  box-sizing: border-box;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 100%;
   position: absolute;
   color: white;
+}
+
+.bottom-row .body {
+  transition: all 0.35s ease;
+}
+
+.bottom-row .body-text {
+  margin: 5px 5px 20px 5px;
+  display: block;
+  box-sizing: inherit;
+  font-size: 1rem;
+}
+
+.bottom-row .body:hover {
+  transform: translateY(-20px);
 }
