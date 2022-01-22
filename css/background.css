@@ -15,6 +15,15 @@ html {
   transition: transform 0.3s ease-out;
 }
 
+.apps {
+  transition: opacity .3s ease;
+}
+
+.apps.show-apps {
+  opacity: 1;
+}
+
+
 .background .background-item {
   position: absolute;
   top: 0;
