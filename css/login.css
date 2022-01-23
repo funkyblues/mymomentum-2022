@@ -1,0 +1,41 @@
+.prompt h3 {
+  color: white;
+  font-size: 2.25em;
+}
+
+.prompt .non-login input {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-top: 4px;
+  display: block;
+  background: 0;
+  border: 0;
+  font-size: 2.25em;
+  display: block;
+  border-bottom: 2px solid #fff;
+  line-height: 1.2;
+  font-weight: 500;
+  outline: none;
+}
+
+@keyframes Opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.submitted {
+  display: none;
+}
+
+.show {
+  animation: Opacity 1s ease-in-out;
+}

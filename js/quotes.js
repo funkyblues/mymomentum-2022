@@ -64,3 +64,14 @@ const quotes = [
       author: "조광조"
     }
   ];
+
+  const showQuote = document.querySelector(".bottom-row .body-quote");
+  const showAuthor = document.querySelector(".bottom-row .body-author");
+
+  function quoteAndAuthor () {
+    randomCount = Math.floor(Math.random() * quotes.length);
+    showQuote.innerText = quotes[randomCount]["quote"];
+    showAuthor.innerText = quotes[randomCount]["author"];
+  }
+
+  quoteAndAuthor();

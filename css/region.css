@@ -26,8 +26,8 @@ h3 {
 }
 
 @media screen and (max-height: 400px) {
-.default-clock .time {
-  display: none;
+  .default-clock .time {
+    display: none;
   }
 }
 .has-3-col {
@@ -96,7 +96,7 @@ h3 {
 }
 
 .time {
-  cursor:default;
+  cursor: default;
   font-size: 1200%;
   letter-spacing: -5px;
 }
@@ -130,8 +130,21 @@ h3 {
 }
 
 .prompt {
+  display: flex;
+  flex-direction: column;
+  margin-top: -100px;
   padding-bottom: 0.5em;
   max-width: 100%;
+}
+
+.prompt form:first-child {
+  margin-bottom: 20px;
+}
+
+.prompt .greeting {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 
 .focus-question {
@@ -168,7 +181,7 @@ h3 {
 }
 
 .bottom-row {
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -190,17 +203,25 @@ h3 {
   color: white;
 }
 
-.bottom-row .body {
-  transition: all 0.35s ease;
+.bottom-row span {
+  display: block;
 }
 
-.bottom-row .body-text {
-  margin: 5px 5px 20px 5px;
+.bottom-row .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 5px 30px 5px;
   display: block;
   box-sizing: inherit;
   font-size: 1rem;
 }
 
-.bottom-row .body:hover {
-  transform: translateY(-20px);
+.body-author {
+  padding-top: 10px;
+}
+
+.body-quote,
+.body-author {
+  text-align: center;
 }
